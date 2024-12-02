@@ -1,0 +1,87 @@
+<!doctype html>  
+<head>
+    <script src="../assets/js/color-modes.js"></script>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.115.4">
+    <title>Hameleon Test JS</title>
+  
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">  
+    <link href="../assets/css/checkout.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>  
+<main>
+  <h4 class="mb-3">Hameleon Project - PUT Klient info</h4>
+  <form class="needs-validation" novalidate id="form" name="form" action="klient_info.html">
+    <hr class="my-4">
+    <h5 class="mb-3">ФИО</h5>
+      <div class="col-sm-6">
+        <label for="Surname" class="form-label">Фамилия</label>
+        <input type="text" class="form-control" name="Surname" id="Surname" placeholder="Иванов" value="" required>
+      </div>
+
+      <div class="col-sm-6">
+        <label for="Name" class="form-label">Имя</label>
+        <input type="text" class="form-control" name="Name" id="Name" placeholder="Иван" value="" required>
+      </div>
+
+      <div class="col-sm-6">
+        <label for="Middlename" class="form-label">Отчество</label>
+        <input type="text" class="form-control" name="Middlename" id="Middlename" placeholder="Иванович" value="" required>
+      </div>
+
+    <h5 class="mb-3">Паспортные данные</h5>
+      <div class="col-sm-6">
+        <label for="seria" class="form-label">Серия</label>
+        <input type="text" class="form-control" name="seria" id="seria" placeholder="00 00">
+      </div>
+
+      <div class="col-sm-6">
+        <label for="nomer" class="form-label">Номер</label>
+        <input type="text" class="form-control" id="nomer" placeholder="000000" required>
+      </div>
+
+    <h5 class="mb-3">Другая информация</h5>
+      <div class="col-sm-6">
+        <label for="organizacia" class="form-label">Название организации<span class="text-body-secondary"></span></label>
+        <input type="text" class="form-control" id="organizacia" placeholder="Hameleon Corporation">
+      </div>
+
+      <div class="col-sm-6">
+          <label for="telefon" class="form-label">Номер телефона<span class="text-body-secondary"></span></label>
+          <input type="text" class="form-control" id="telefon" placeholder="+7 (000) 000-0000">
+      </div>
+    
+    <hr class="my-4">
+    <button class="w-25 btn btn-primary btn-lg" onclick="klient_update()">Сохранить</button>
+    <button class="w-25 btn btn-primary btn-lg" style="background-color:red; border-color: red" onclick="klient_delete()">Удалить запись</button>
+    <br/><br/><button class="w-50 btn btn-primary btn-lg">Назад</button>
+    <script src='../js/klient_update.js'></script>
+    <script>
+      FIO = new URLSearchParams(window.location.search).get('fioUser').split(' ')
+      inputSurname = document.querySelector('#Surname');
+      inputSurname.value = FIO[0];
+      inputName = document.querySelector('#Name');
+      inputName.value = FIO[1];
+      inputMiddlename = document.querySelector('#Middlename');
+      inputMiddlename.value = FIO[2];
+
+      Pasport = new URLSearchParams(window.location.search).get('pasportUser').split(' ')
+      inputseria = document.querySelector('#seria');
+      inputseria.value = Pasport[0] + ' ' + Pasport[1];
+      inputnomer = document.querySelector('#nomer');
+      inputnomer.value = Pasport[2];
+
+      inputorganizacia = document.querySelector('#organizacia');
+      inputorganizacia.value = new URLSearchParams(window.location.search).get('orgaUser');
+      inputtelefon = document.querySelector('#telefon');
+      inputtelefon.value = new URLSearchParams(window.location.search).get('telefonUser');
+    </script>
+  </form>
+</main>

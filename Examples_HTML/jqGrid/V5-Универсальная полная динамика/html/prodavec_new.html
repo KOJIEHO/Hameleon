@@ -1,0 +1,66 @@
+<!doctype html>   
+<head>
+    <script src="../assets/js/color-modes.js"></script>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.115.4">
+    <title>Hameleon Test JS</title>
+  
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/checkout.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head> 
+<body>
+  <h4 class="mb-3">Hameleon Project - POST Prodavec info</h4>
+  <hr class="my-4">
+  <form class="needs-validation" novalidate id="form" name="form">
+    <script>
+      url = 'http://localhost:4388/ham/odata/Prodavec(nil)?$metadata=columns'
+      fetch(url)
+        .then(response => response.json())
+        .then(
+          function(response){ 
+            data = response.columns 
+            for (i = 0; i < data.length; i++){if (data[i].name[0] == "$"){delete data.splice(i, 1);i--}}
+
+            inputBoxName = []
+            inputBoxType = []
+            inputBoxPlaceholder = []
+            for (i = 0; i < data.length; i++) {
+              if (data[i].name){inputBoxName.push(data[i].name)}else{inputBoxName.push('')}
+              if (data[i].type){inputBoxType.push(data[i].type)}else{inputBoxPlaceholder.push('')}
+              if (data[i].tags){if (data[i].tags.jqGrid){inputBoxPlaceholder.push(data[i].tags.jqGrid.placeholder)}else{inputBoxPlaceholder.push('')}}else{inputBoxPlaceholder.push('')}
+            }
+
+            inputBox = new Array(inputBoxPlaceholder.length)       
+            var form = document.getElementById("form")
+            form.setAttribute("style", "display:flex;flex-direction:column")
+            
+            for (let i = 0; i < inputBoxPlaceholder.length; i++) {
+              inputBox[i] = document.createElement("input")
+              inputBox[i].setAttribute("name", inputBoxName[i])
+              inputBox[i].setAttribute("type", inputBoxType[i])
+              inputBox[i].setAttribute("placeholder", inputBoxPlaceholder[i])
+              form.appendChild(inputBox[i])
+            }
+
+            var button = document.createElement("input");
+            button.setAttribute("class", "w-25 btn btn-primary btn-lg");
+            button.setAttribute("type", "submit");
+            button.setAttribute("value", "Добавить");
+            form.appendChild(button);
+            }  
+        )
+    </script> 
+  </form>
+  <form action="prodavec_info.html">
+    <input class="w-25 btn btn-primary btn-lg" type="submit" value="Назад" />
+  </form>
+  <script src='../js/universal_new.js' user="Prodavec"></script>
+</body>

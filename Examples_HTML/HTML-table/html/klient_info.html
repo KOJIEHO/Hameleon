@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<link href="../css/style.css" rel="stylesheet"> 
+</head> 
+
+<body> 
+	<h1 style="color: green;"> Project Hameleon </h1> 
+
+	<form action="../index.html">
+		<input type="submit" value="Главное меню" />
+	</form>
+
+	<h2>Klient Data Management</h2> 
+
+	<div id="formContainer"> 
+		<label for="FioInput"> FIO: </label> 
+		<input type="text" id="FioInput" placeholder="F I O"> 
+
+		<label for="PasportInput"> Pasport: </label> 
+		<input type="text" id="PasportInput" placeholder="** ** ******"> 
+		
+        <label for="OrgaInput"> Orga: </label> 
+		<input type="text" id="OrgaInput" placeholder="ООО HAMELEON"> 
+
+        <label for="TelefonInput"> Telefon: </label> 
+		<input type="text" id="TelefonInput" placeholder="* (***) ***-****"> 
+		
+		<button onclick="addData()"> Добавить </button>
+		
+		<form action="klient_info.html">
+			<input type="submit" value="Перезагрузить БД" />
+		</form>		
+	</div> 
+	<table id="outputTable"> 
+		<tr> 
+			<th>Id</th> 
+			<th>FIO</th> 
+			<th>Pasport</th> 
+			<th>Orga</th> 
+            <th>Telefon</th>
+			<th>Action</th> 
+		</tr> 
+	</table> 
+
+	<script src='../js/klient_info.js'> </script> 
+</body> 
+
+</html>

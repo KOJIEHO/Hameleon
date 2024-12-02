@@ -1,0 +1,48 @@
+<!doctype html> 
+<head>
+    <script src="assets/js/color-modes.js"></script>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.115.4">
+    <title>Hameleon Test JS</title>
+  
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">  
+    <link href="assets/css/checkout.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>   
+<main>
+  <h1 style="color: green;">Project Hameleon</h1> 
+  <h4 class="mb-2">Главное меню</h4>
+  <form class="needs-validation" novalidate id="form" name="form">
+    <script>
+      fetch('http://localhost:4388/ham/odata/')
+        .then(response => response.json())
+        .then(function(response){ 
+            var form = document.getElementById("form")
+            form.setAttribute("style", "display:flex;flex-direction:column")
+
+            let model_name = response.ModelName
+            let classes_name = []
+            for (x in response.Classes){
+              classes_name.push(response.Classes[x].name)
+            }
+        
+            buttons = new Array(classes_name.length)
+            for (i in classes_name){
+              buttons[i] = document.createElement("input")
+              buttons[i].setAttribute("type", 'button')
+              buttons[i].setAttribute("onclick", `location.href='html/list_objects.html?Class_name=${classes_name[i]}'`)
+              buttons[i].setAttribute("value", classes_name[i])
+              form.appendChild(buttons[i])         
+            }
+          })  
+    </script>
+    <!-- <input type="button" onclick="location.href='html/klient_info.html'" value="Go to Google" /> -->
+
+</main>

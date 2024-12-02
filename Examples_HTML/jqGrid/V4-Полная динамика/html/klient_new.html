@@ -1,0 +1,77 @@
+<!doctype html>   
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.115.4">
+  <title>Hameleon Test JS</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/css/checkout.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head> 
+
+<body>
+  <h4 class="mb-3">Hameleon Project - POST Klient info</h4>
+  <hr class="my-4">
+  <form class="needs-validation" novalidate id="form" name="form">
+    <script>
+      url = 'http://localhost:4388/ham/odata/Klient(1001,1002)?$metadata=columns'
+      fetch(url)
+        .then(response => response.json())
+        .then(
+          function(response){ 
+            tableSettings = response.columns 
+            tableData = response.value
+
+            inputBoxPlaceholder = Object.values(tableData[0]) 
+            inputBoxName = Object.keys(tableData[0])
+
+            inputBox = new Array(inputBoxPlaceholder.length)       
+            var form = document.getElementById("form")
+            form.setAttribute("style", "display:flex;flex-direction:column")
+            
+            for (let i = 0; i < inputBoxPlaceholder.length; i++) {
+              inputBox[i] = document.createElement("input")
+              // inputBox[i].setAttribute("onkeydown", 'return false') // ReadOnly
+              inputBox[i].setAttribute("name", inputBoxName[i])
+              inputBox[i].setAttribute("type", tableSettings[i].type)
+              inputBox[i].setAttribute("placeholder", inputBoxPlaceholder[i])
+              form.appendChild(inputBox[i])
+            }
+            var button = document.createElement("input");
+            button.setAttribute("class", "w-25 btn btn-primary btn-lg");
+            button.setAttribute("type", "submit");
+            button.setAttribute("value", "Добавить");
+            form.appendChild(button);
+
+            // Тут прикольно, что добавляется дата
+            // var userDob = document.createElement("input")
+            // userDob.setAttribute("placeholder", "D.O.B")
+            // userDob.setAttribute("type", "date")
+            // form.appendChild(userDob)
+            }  
+        )
+    </script> 
+  </form>
+  <form action="klient_info.html">
+    <input  class="w-25 btn btn-primary btn-lg" type="submit" value="Назад" />
+  </form>
+  <script src='../js/klient_new.js'></script>
+</body>
+
+<!-- 
+  1) Важно пояснить, что можно добавить ридонли, чтобы не менять данные, 
+  либо придумать умный if, который уберет возможность форматировать id и другие важные данные.
+   Строка - 42
+  2) Для Status можно поменять на тип number, там будет ввод только цифр, а пока можно ввести, что угодно.
+  Из-за этого ломается. Аналогична ситуация для Klient.
+  3) При попытке сделать запрос к одному клиенту, то не приходят колонки с настройками
+  4) 
+ -->

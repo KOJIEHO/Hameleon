@@ -1,0 +1,77 @@
+<!doctype html>   
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.115.4">
+  <title>Hameleon Test JS</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/css/checkout.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head> 
+<main>
+  <h4 class="mb-3">Hameleon Project - PUT Prodavec info</h4>
+  <form class="needs-validation" novalidate id="form" name="form" action="prodavec_info.html">
+    <hr class="my-4">
+    <h5 class="mb-3">ФИО</h5>
+      <div class="col-sm-6">
+        <label for="Surname" class="form-label">Фамилия</label>
+        <input type="text" class="form-control" name="Surname" id="Surname">
+      </div>
+
+      <div class="col-sm-6">
+        <label for="Name" class="form-label">Имя</label>
+        <input type="text" class="form-control" name="Name" id="Name">
+      </div>
+
+      <div class="col-sm-6">
+        <label for="Middlename" class="form-label">Отчество</label>
+        <input type="text" class="form-control" name="Middlename" id="Middlename">
+      </div>
+
+    <h5 class="mb-3">Другая информация</h5>
+      <div class="col-sm-6">
+        <label for="telefon" class="form-label">Номер телефона<span class="text-body-secondary"></span></label>
+        <input type="text" class="form-control" id="telefon" placeholder="+7 (000) 000-00-00">
+      </div>
+      
+      <div class="col-sm-6">
+        <label for="prinyat" class="form-label">Дата начала работы<span class="text-body-secondary"></span></label>
+        <input type="text" class="form-control" id="prinyat" placeholder="гггг-мм-дд">
+      </div>
+
+      <div class="col-sm-6">
+        <label for="dataRogdeniya" class="form-label">Дата рождения<span class="text-body-secondary"></span></label>
+        <input type="text" class="form-control" id="dataRogdeniya" placeholder="гггг-мм-дд">
+      </div>
+
+    <hr class="my-4">
+    <button class="w-25 btn btn-primary btn-lg" onclick="update_prodavec()">Сохранить запись</button>
+    <button class="w-25 btn btn-primary btn-lg" style="background-color:red; border-color: red" onclick="delete_prodavec()">Удалить запись</button>
+    <br/><br/><button class="w-50 btn btn-primary btn-lg">Назад</button>
+  </form>
+  <script src='../js/prodavec_update.js'></script>
+  <script>
+    FIO = new URLSearchParams(window.location.search).get('fioUser').split(' ')
+    inputSurname = document.querySelector('#Surname');
+    inputSurname.value = FIO[0];
+    inputName = document.querySelector('#Name');
+    inputName.value = FIO[1];
+    inputMiddlename = document.querySelector('#Middlename');
+    inputMiddlename.value = FIO[2];
+
+    inputtelefon = document.querySelector('#telefon');
+    inputtelefon.value = new URLSearchParams(window.location.search).get('telefonUser');
+    inputprinyat = document.querySelector('#prinyat');
+    inputprinyat.value = new URLSearchParams(window.location.search).get('prinyatUser');
+    inputdataRogdeniya = document.querySelector('#dataRogdeniya');
+    inputdataRogdeniya.value = new URLSearchParams(window.location.search).get('dataRogdeniyaUser');
+  </script>
+</main>

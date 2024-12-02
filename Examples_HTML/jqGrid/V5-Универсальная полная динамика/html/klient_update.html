@@ -1,0 +1,80 @@
+<!doctype html>  
+<head>
+    <script src="../assets/js/color-modes.js"></script>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.115.4">
+    <title>Hameleon Test JS</title>
+  
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">  
+    <link href="../assets/css/checkout.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>  
+<main>
+  <h4 class="mb-3">Hameleon Project - PUT Klient info</h4>
+  <form class="needs-validation" novalidate id="form" name="form" action="klient_info.html"> 
+    <script>
+      id = new URLSearchParams(window.location.search).get('idUser')
+      url = `http://localhost:4388/ham/odata/Klient(${id},${id})?$metadata=columns`
+      fetch(url)
+        .then(response => response.json())
+        .then(
+          function(response){ 
+            settingsValue = response.columns 
+            dataValue = response.value[0]
+
+            for (i = 0; i < settingsValue.length; i++){if (settingsValue[i].name[0] == "$"){delete settingsValue.splice(i, 1);i--}}
+            for (i = 0; i < settingsValue.length; i++){if (Object.keys(dataValue)[i][0] == "$"){delete dataValue[Object.keys(dataValue)[i]];i--}}
+            inputBoxName = Object.keys(dataValue)
+            inputBoxType = settingsValue
+            inputBoxPlaceholder = Object.values(dataValue) 
+
+            var form = document.getElementById("form")
+            form.setAttribute("style", "display:flex;flex-direction:column")
+
+            inputBox = new Array(inputBoxPlaceholder.length)
+            for (let i = 0; i < inputBoxPlaceholder.length; i++) {
+              inputBox[i] = document.createElement("input")
+              inputBox[i].setAttribute("name", inputBoxName[i])
+              inputBox[i].setAttribute("id", inputBoxName[i])
+              inputBox[i].setAttribute("type", inputBoxType[i].type)
+              inputBox[i].setAttribute("placeholder", inputBoxPlaceholder[i])
+              form.appendChild(inputBox[i])
+            }     
+
+            var buttonSave = document.createElement("input");
+            buttonSave.setAttribute("class", "w-25 btn btn-primary btn-lg");
+            // buttonSave.setAttribute("type", "submit");
+            buttonSave.setAttribute("onclick", "update()");
+            buttonSave.setAttribute("value", "Сохранить запись");
+            form.appendChild(buttonSave);
+
+            var buttonDelete = document.createElement("input");
+            buttonDelete.setAttribute("class", "w-25 btn btn-primary btn-lg");
+            buttonDelete.setAttribute("type", "submit");
+            buttonDelete.setAttribute("style", "background-color:red; border-color: red");
+            buttonDelete.setAttribute("onclick", "deletion()");
+            buttonDelete.setAttribute("value", "Удалить запись");
+            form.appendChild(buttonDelete);
+            
+            for (let i = 0; i < inputBoxPlaceholder.length; i++) {
+              try {
+                inputSurname = document.querySelector('#' + inputBoxName[i]);
+                inputSurname.value = inputBoxPlaceholder[i];
+              } catch (err) {}
+            } 
+          }
+        )
+    </script>
+    <script src='../js/universal_update.js' user="Klient" num="(nil)"></script>
+  </form>
+  <form action="klient_info.html">
+    <input  class="w-25 btn btn-primary btn-lg" type="submit" value="Назад" />
+  </form>
+</main>
