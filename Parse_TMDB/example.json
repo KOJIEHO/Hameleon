@@ -1,0 +1,445 @@
+{
+    "adult": false,
+    "backdrop_path": "/2w4xG178RpB4MDAIfTkqAuSJzec.jpg",
+    "belongs_to_collection": {
+        "id": 10,
+        "name": "Звёздные Войны (Коллекция)",
+        "poster_path": "/y6kKwGLCCy3MMbBdUnxB3afIfsd.jpg",
+        "backdrop_path": "/zZDkgOmFMVYpGAkR9Tkxw0CRnxX.jpg"
+    },
+    "budget": 11000000,
+    "genres": [
+        {
+            "id": 12,
+            "name": "приключения"
+        },
+        {
+            "id": 28,
+            "name": "боевик"
+        },
+        {
+            "id": 878,
+            "name": "фантастика"
+        }
+    ],
+    "homepage": "",
+    "id": 11,
+    "imdb_id": "tt0076759",
+    "origin_country": [
+        "US"
+    ],
+    "original_language": "en",
+    "original_title": "Star Wars",
+    "overview": "Татуин. Планета-пустыня. Уже постаревший рыцарь Джедай Оби Ван Кеноби спасает молодого Люка Скайуокера, когда тот пытается отыскать пропавшего дроида. С этого момента Люк осознает свое истинное назначение: он один из рыцарей Джедай. В то время как гражданская война охватила галактику, а войска повстанцев ведут бои против сил злого Императора, к Люку и Оби Вану присоединяется отчаянный пилот-наемник Хан Соло, и в сопровождении двух дроидов, R2D2 и C-3PO, этот необычный отряд отправляется на поиски предводителя повстанцев — принцессы Леи.",
+    "popularity": 4.538,
+    "poster_path": "/wPlD3Z5x0O92rsB44XKHKQijROM.jpg",
+    "production_companies": [
+        {
+            "id": 1,
+            "logo_path": "/tlVSws0RvvtPBwViUyOFAO0vcQS.png",
+            "name": "Lucasfilm Ltd.",
+            "origin_country": "US"
+        },
+        {
+            "id": 25,
+            "logo_path": "/qZCc1lty5FzX30aOCVRBLzaVmcp.png",
+            "name": "20th Century Fox",
+            "origin_country": "US"
+        }
+    ],
+    "production_countries": [
+        {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+        }
+    ],
+    "release_date": "1977-05-25",
+    "revenue": 775398007,
+    "runtime": 121,
+    "spoken_languages": [
+        {
+            "english_name": "English",
+            "iso_639_1": "en",
+            "name": "English"
+        }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "Звёздные войны: Эпизод 4 - Новая надежда",
+    "video": false,
+    "vote_average": 8.202,
+    "vote_count": 20958
+}
+
+
+
+
+
+
+{
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/qUc0Hol3eP74dbW4YyqT6oRLYgT.jpg",
+            "genre_ids": [
+                878,
+                35,
+                12
+            ],
+            "id": 696506,
+            "original_language": "en",
+            "original_title": "Mickey 17",
+            "overview": "\"Одноразовый сотрудник\" участвует в колонизации ледяного мира. После смерти Микки, его сознание каждый раз загружается в новое тело.",
+            "popularity": 25.061,
+            "poster_path": "/dsHWBit2DkXohujpBIJL7ftPUQF.jpg",
+            "release_date": "2025-02-28",
+            "title": "Микки 17",
+            "video": false,
+            "vote_average": 7.017,
+            "vote_count": 694
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/AuSip6e3uvQgPnnFQjzdTrOVPx7.jpg",
+            "genre_ids": [
+                16,
+                28
+            ],
+            "id": 1297763,
+            "original_language": "ja",
+            "original_title": "ニンジャバットマン対ヤクザリーグ",
+            "overview": "",
+            "popularity": 23.049,
+            "poster_path": "/y2mQtPz6uDdw4CRpSdU5tlGB2MA.jpg",
+            "release_date": "2025-03-17",
+            "title": "Бэтмен-ниндзя против Лиги якудза",
+            "video": false,
+            "vote_average": 4.4,
+            "vote_count": 10
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/nhjXe1Gb3Hq8Q5COjsY7ehZyJl4.jpg",
+            "genre_ids": [
+                18,
+                35,
+                53,
+                28
+            ],
+            "id": 1438267,
+            "original_language": "he",
+            "original_title": "גמד מחמד 4",
+            "overview": "",
+            "popularity": 13.754,
+            "poster_path": "/9jw0tNgP3pRCq3WioDDbjwOI1n4.jpg",
+            "release_date": "2025-03-16",
+            "title": "גמד מחמד 4",
+            "video": false,
+            "vote_average": 4.0,
+            "vote_count": 5
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 1439526,
+            "original_language": "en",
+            "original_title": "Full Out",
+            "overview": "",
+            "popularity": 13.753,
+            "poster_path": "/eXvVjE5RyNKbxHCmmj1DLu55GKe.jpg",
+            "release_date": "2025-03-16",
+            "title": "Full Out",
+            "video": false,
+            "vote_average": 4.5,
+            "vote_count": 2
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 1439514,
+            "original_language": "en",
+            "original_title": "The Phalanx",
+            "overview": "",
+            "popularity": 13.753,
+            "poster_path": "/4wgiJBrpvLh9kOe8feXd5MxLbzW.jpg",
+            "release_date": "2025-03-16",
+            "title": "The Phalanx",
+            "video": false,
+            "vote_average": 4.333,
+            "vote_count": 3
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 1439509,
+            "original_language": "en",
+            "original_title": "Songs Overheard in the Shadows",
+            "overview": "",
+            "popularity": 13.473,
+            "poster_path": "/3Cgx8CMlZ8BL4ayG9fzZYuK5fYZ.jpg",
+            "release_date": "2025-03-16",
+            "title": "Songs Overheard in the Shadows",
+            "video": false,
+            "vote_average": 8.0,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/3IcE36HHehBWHDRXSoEQ6hl5ei8.jpg",
+            "genre_ids": [
+                18
+            ],
+            "id": 1440083,
+            "original_language": "es",
+            "original_title": "Marciano García",
+            "overview": "",
+            "popularity": 13.471,
+            "poster_path": "/sdGwrjlFO9NII5mPKf57kCjX9VD.jpg",
+            "release_date": "2025-03-16",
+            "title": "Marciano García",
+            "video": false,
+            "vote_average": 5.5,
+            "vote_count": 2
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/cShaLua5ZlSGlP5esqsJ1dTBrWi.jpg",
+            "genre_ids": [
+                18,
+                36
+            ],
+            "id": 1442915,
+            "original_language": "bg",
+            "original_title": "Залог",
+            "overview": "",
+            "popularity": 13.469,
+            "poster_path": "/aqsDDMTnmTZwbbZmDepqLFPdoiZ.jpg",
+            "release_date": "2025-03-16",
+            "title": "Залог",
+            "video": false,
+            "vote_average": 7.0,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                35
+            ],
+            "id": 1443480,
+            "original_language": "de",
+            "original_title": "Der geräderte Mensch",
+            "overview": "",
+            "popularity": 13.468,
+            "poster_path": "/4gQ2ZnfZ6u6WB9iWmWm9sLCLqm1.jpg",
+            "release_date": "2025-03-16",
+            "title": "Der geräderte Mensch",
+            "video": false,
+            "vote_average": 4.0,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 1444331,
+            "original_language": "es",
+            "original_title": "Final",
+            "overview": "",
+            "popularity": 13.456,
+            "poster_path": "/nSNOzbstoR0dW960oT1c33qGiYz.jpg",
+            "release_date": "2025-03-16",
+            "title": "Final",
+            "video": false,
+            "vote_average": 5.0,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/nf6ldbdXgPd49c07MpVqvdzahcC.jpg",
+            "genre_ids": [
+                18
+            ],
+            "id": 1104024,
+            "original_language": "en",
+            "original_title": "The Bitter Tears of Zahra Zand",
+            "overview": "",
+            "popularity": 22.449,
+            "poster_path": "/3kh2YcUy0yGob7qG02Gi0VT8KBo.jpg",
+            "release_date": "2025-03-17",
+            "title": "The Bitter Tears of Zahra Zand",
+            "video": false,
+            "vote_average": 8.0,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                99
+            ],
+            "id": 1443695,
+            "original_language": "it",
+            "original_title": "Eyes Everywhere",
+            "overview": "",
+            "popularity": 22.408,
+            "poster_path": "/inJjkPchqjXe3vLajI7MFVldUSb.jpg",
+            "release_date": "2025-03-17",
+            "title": "Eyes Everywhere",
+            "video": false,
+            "vote_average": 0.0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/52hXjbdOEjiOdW5hlonjA1QcrD8.jpg",
+            "genre_ids": [
+                35
+            ],
+            "id": 1439890,
+            "original_language": "en",
+            "original_title": "Bert Kreischer: Lucky",
+            "overview": "",
+            "popularity": 22.418,
+            "poster_path": "/Tuln36rarqdrSnXemkb7oBRmCM.jpg",
+            "release_date": "2025-03-17",
+            "title": "Bert Kreischer: Lucky",
+            "video": false,
+            "vote_average": 0.0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/2If6RQLipzaBVsJW3PhbNheYdXv.jpg",
+            "genre_ids": [
+                18
+            ],
+            "id": 1439837,
+            "original_language": "en",
+            "original_title": "The Last Goodbye",
+            "overview": "",
+            "popularity": 22.698,
+            "poster_path": "/zYDFxnKgWBTahFItkGo5Uyn8bLz.jpg",
+            "release_date": "2025-03-17",
+            "title": "The Last Goodbye",
+            "video": false,
+            "vote_average": 6.0,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                99
+            ],
+            "id": 1435057,
+            "original_language": "lt",
+            "original_title": "Sacrum ir Profanum Pievėnuose",
+            "overview": "",
+            "popularity": 22.429,
+            "poster_path": "/u1I49qAgXCSGiwq8ixMULl9SwJg.jpg",
+            "release_date": "2025-03-17",
+            "title": "Sacrum ir Profanum Pievėnuose",
+            "video": false,
+            "vote_average": 3.0,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/i7qlKvC5se9mzHNc1LLJiGvI9so.jpg",
+            "genre_ids": [
+                53,
+                80,
+                28
+            ],
+            "id": 1433719,
+            "original_language": "en",
+            "original_title": "High Ground",
+            "overview": "",
+            "popularity": 22.433,
+            "poster_path": "/p18YjffOB3RzQ4fpZMrQkHUaJNU.jpg",
+            "release_date": "2025-03-17",
+            "title": "High Ground",
+            "video": false,
+            "vote_average": 2.5,
+            "vote_count": 4
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/xMJB53yUT01yNtu198tg4rnY8b.jpg",
+            "genre_ids": [
+                28
+            ],
+            "id": 1392821,
+            "original_language": "en",
+            "original_title": "Gladiators",
+            "overview": "",
+            "popularity": 12.654,
+            "poster_path": "/3ecBMVWe2xRhHKcTcRkuqLk85jq.jpg",
+            "release_date": "2024-11-14",
+            "title": "Gladiators",
+            "video": false,
+            "vote_average": 10.0,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/dFzKhPaC4wIMmp6eHQr1a2EBstH.jpg",
+            "genre_ids": [
+                18,
+                80
+            ],
+            "id": 1361451,
+            "original_language": "ca",
+            "original_title": "La terra negra",
+            "overview": "",
+            "popularity": 22.617,
+            "poster_path": "/3iRxZlTSkXUON99zEq1iZQV2VH2.jpg",
+            "release_date": "2025-03-17",
+            "title": "La terra negra",
+            "video": false,
+            "vote_average": 0.0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/jmsEEwHT7GtVaYFiciKSDI4i8C1.jpg",
+            "genre_ids": [
+                18
+            ],
+            "id": 1359893,
+            "original_language": "it",
+            "original_title": "100 di questi anni",
+            "overview": "",
+            "popularity": 22.899,
+            "poster_path": "/57v4gE3Dx6TViwIe1BiC2rgghhs.jpg",
+            "release_date": "2025-03-17",
+            "title": "100 di questi anni",
+            "video": false,
+            "vote_average": 9.0,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/vuQVJYSkrm5lApNtQxOcOtQwxy6.jpg",
+            "genre_ids": [],
+            "id": 1445302,
+            "original_language": "en",
+            "original_title": "Carabao Cup Final 2025",
+            "overview": "",
+            "popularity": 13.223,
+            "poster_path": "/idI77qU1yZ8kbUfoHgndsgCJbYg.jpg",
+            "release_date": "2025-03-16",
+            "title": "Carabao Cup Final 2025",
+            "video": false,
+            "vote_average": 5.0,
+            "vote_count": 5
+        }
+    ],
+    "total_pages": 49236,
+    "total_results": 984712
+}

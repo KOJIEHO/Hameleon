@@ -1,0 +1,90 @@
+{
+    "adult": false,
+    "backdrop_path": "/qUc0Hol3eP74dbW4YyqT6oRLYgT.jpg",
+    "belongs_to_collection": null,
+    "budget": 118000000,
+    "genres": [
+      {
+        "id": 878,
+        "name": "фантастика"
+      },
+      {
+        "id": 35,
+        "name": "комедия"
+      },
+      {
+        "id": 12,
+        "name": "приключения"
+      }
+    ],
+    "homepage": "",
+    "id": 696506,
+    "imdb_id": "tt12299608",
+    "origin_country": [
+      "GB",
+      "US"
+    ],
+    "original_language": "en",
+    "original_title": "Mickey 17",
+    "overview": "\"Одноразовый сотрудник\" участвует в колонизации ледяного мира. После смерти Микки, его сознание каждый раз загружается в новое тело.",
+    "popularity": 25.061,
+    "poster_path": "/dsHWBit2DkXohujpBIJL7ftPUQF.jpg",
+    "production_companies": [
+      {
+        "id": 174,
+        "logo_path": "/zhD3hhtKB5qyv7ZeL4uLpNxgMVU.png",
+        "name": "Warner Bros. Pictures",
+        "origin_country": "US"
+      },
+      {
+        "id": 81,
+        "logo_path": "/8wOfUhA7vwU2gbPjQy7Vv3EiF0o.png",
+        "name": "Plan B Entertainment",
+        "origin_country": "US"
+      },
+      {
+        "id": 168228,
+        "logo_path": null,
+        "name": "Offscreen",
+        "origin_country": "GB"
+      },
+      {
+        "id": 81024,
+        "logo_path": null,
+        "name": "Kate Street Picture Company",
+        "origin_country": "US"
+      },
+      {
+        "id": 216687,
+        "logo_path": null,
+        "name": "Domain Entertainment",
+        "origin_country": "US"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "US",
+        "name": "United States of America"
+      },
+      {
+        "iso_3166_1": "GB",
+        "name": "United Kingdom"
+      }
+    ],
+    "release_date": "2025-02-28",
+    "revenue": 90487032,
+    "runtime": 139,
+    "spoken_languages": [
+      {
+        "english_name": "English",
+        "iso_639_1": "en",
+        "name": "English"
+      }
+    ],
+    "status": "Released",
+    "tagline": "«Он Умирает, Чтобы Спасти Человечество»",
+    "title": "Микки 17",
+    "video": false,
+    "vote_average": 7.014,
+    "vote_count": 705
+  }
